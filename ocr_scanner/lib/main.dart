@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ocr_scanner/main_app_theme.dart';
 import 'package:ocr_scanner/methods_menu_view.dart';
 
 void main() async {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'ElMaghrabi Scanner',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: true),
+      theme: MainAppTheme.lightTheme,
       home: MethodsMenuView(),
     );
   }
