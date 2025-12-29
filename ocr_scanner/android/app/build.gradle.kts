@@ -21,7 +21,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.ocr_scanner"
-        minSdk = flutter.minSdkVersion
+        minSdk = 25
         targetSdk = 36
         versionCode = flutter.versionCode
         versionName = flutter.versionName
