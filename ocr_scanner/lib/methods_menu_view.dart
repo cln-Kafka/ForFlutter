@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ocr_scanner/mlkit_barcode/mlkit_barcode_home_view.dart';
 import 'package:ocr_scanner/mlkit_digits/mlkit_digits_home_view.dart';
+import 'package:ocr_scanner/scanwedge/scanwedge_stream_mode.dart';
 
 class MethodsMenuView extends StatelessWidget {
   const MethodsMenuView({super.key});
@@ -43,7 +44,14 @@ class MethodsMenuView extends StatelessWidget {
                   child: Text('MLKit BarCode'),
                 ),
                 FilledButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ScanWedgeStreamMode(),
+                      ),
+                    );
+                  },
                   child: Text('ScanWidge Package'),
                 ),
                 FilledButton(
