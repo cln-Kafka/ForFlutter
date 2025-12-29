@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ocr_scanner/honeywell_package/honeywell_scanner_screen.dart';
 import 'package:ocr_scanner/mlkit_barcode/mlkit_barcode_home_view.dart';
 import 'package:ocr_scanner/mlkit_digits/mlkit_digits_home_view.dart';
 import 'package:ocr_scanner/scanwedge/scanwedge_stream_mode.dart';
@@ -55,7 +56,16 @@ class MethodsMenuView extends StatelessWidget {
                   child: Text('ScanWidge Package'),
                 ),
                 FilledButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return HoneywellScannerScreen();
+                        },
+                      ),
+                    );
+                  },
                   child: Text('HoneyWell Package'),
                 ),
               ],
